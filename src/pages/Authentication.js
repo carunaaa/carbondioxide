@@ -14,60 +14,16 @@ const Auth = () => {
   };
   return (
     <>
-     
-      <div className="container">
-      <div className="col-md-3">
-        <form>
-          <div class="form-outline mb-4">
-            <input type="email" id="form2Example1" class="form-control" />
-            <label class="form-label" for="form2Example1">Email address</label>
-          </div>
-
-          <div class="form-outline mb-4">
-            <input type="password" id="form2Example2" class="form-control" />
-            <label class="form-label" for="form2Example2">Password</label>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col d-flex justify-content-center">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
-                <label class="form-check-label" for="form2Example34"> Remember me </label>
-              </div>
-            </div>
-
-            <div class="col">
-              <a href="#!">Forgot password?</a>
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-
-
-          <div class="text-center">
-            <p>Not a member? <a href="#!">Register</a></p>
-            <p>or sign up with:</p>
-            <button type="button" class="btn btn-secondary btn-floating mx-1">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-
-            <button type="button" class="btn btn-secondary btn-floating mx-1">
-              <i class="fab fa-google"></i>
-            </button>
-
-            <button type="button" class="btn btn-secondary btn-floating mx-1">
-              <i class="fab fa-twitter"></i>
-            </button>
-
-            <button type="button" class="btn btn-secondary btn-floating mx-1">
-              <i class="fab fa-github"></i>
-            </button>
-          </div>
-        </form>
-
-      </div>
-      </div>
-      <div>
+    <div
+        className="image-container bg-image d-flex justify-content-center align-items-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1473654729523-203e25dfda10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')",
+          height: "100vh",
+        }}
+      ></div>
+    
+      {/* <div>
         {data.login &&
           <>
             <div>Access: {data.login.access}</div>
@@ -78,7 +34,7 @@ const Auth = () => {
       </div>
       {data.profile &&
         <div>Name: {data.profile.first_name} {data.profile.last_name}</div>
-      }
+      } */}
     </>
   );
 };
