@@ -61,8 +61,8 @@ const Footer = () => {
       <div class="containerr p-4 pb-0">
         <section class="mb-4">
           <div class="style text-decoration-none m-1">
-            <Link to="/">Home</Link>
-            <Link to="/dashboard">Dashboard</Link>
+            {/* <Link to="/">MainPage</Link> */}
+            <Link to="/dashboard">Home</Link>
             <Link to="/auth">Projects</Link>
           </div>
           <div class="d-flex justify-content-center" id="footer-link">
@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
 
       <div class="text-center p-3" id="text">
-        © 2020 Copyright: All right preserved.
+        © 2023 Copyright: All right preserved.
         <Link class="text-white" to={"https://ecoco2daily.com/"}>
          <h3 className="text-success">ecoCO2 Daily</h3>
         </Link>

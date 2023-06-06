@@ -30,7 +30,7 @@ const Nav = () => {
     // </Menu>
 
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -41,19 +41,25 @@ const Nav = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars text-white"></i>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <a class="navbar-brand mt-2 mt-lg-0" href="/">
               <Link to={"/"} className="header-name">
-                <h1>ecoCO2 Daily</h1>
+                <h2>ecoCO2Daily</h2>
               </Link>
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#">
-                  Dashboard
+              <li class="nav-item ">
+                <a class="nav-link  text-white fs-5" href="/dashboard">
+                  {/* <Link
+                    to={"/dashboard"}
+                    className="header-name text-decoration-none text-light"
+                  >
+                    Home
+                  </Link> */}
+                  Home
                 </a>
               </li>
               <li class="nav-item">
@@ -64,10 +70,10 @@ const Nav = () => {
             </ul>
           </div>
           <Link to={"/auth"}>
-                      <button type="button" class="btn btn-success px-3 me-5">
-                       Login
-                      </button>
-                    </Link>
+            <button type="button" class="btn btn-success px-3 me-5">
+              Login
+            </button>
+          </Link>
         </div>
       </nav>
     </>

@@ -28,13 +28,20 @@ const ExampleComponent = () => {
     </div> */}
      
      <div
-        className="image-container bg-image d-flex justify-content-center align-items-center"
+        className=" bg-image d-flex justify-content-center align-items-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1447522760800-59f967f9083e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')",
-          height: "100vh",
+          height: "90vh",
+          
         }}
       >
+        <div
+          className="mask"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+          }}
+        ></div>
         
         <div className="text-container">
           <h1 className="card-title">ecoCO2 Daily</h1>
@@ -55,6 +62,8 @@ const ExampleComponent = () => {
         </div>
       </div>
      {/* <h2 className="d-flex justify-content-center align-item-center">What is CO2?</h2> */}
+     {/* table */}
+     
     </div>
   );
 };

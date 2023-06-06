@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import Authentication from './pages/Authentication';
-import Dashboard from './pages/Dashboard';
-import Service from './pages/Dashboard/Service';
+import Dashboard from './pages/Dashboard/Dashboard';
 import Layout from './components/Layout';
 import './App.css';
 import Carbon from './pages/Carbon';
@@ -17,7 +16,6 @@ function App() {
           <Route exact path="/" element={<LandingPage/>} />
           <Route exact path="/auth" element={<Authentication/>} />
           <Route exact path="/dashboard" element={<Dashboard/>} />
-          <Route exact path="/dashboard/service" element={<Service/>} />
           <Route exact path="/dashboard/carbon" element={<Carbon/>} />
           <Route exact path="/dashboard/graph" element={<Graph/>} />
         </Routes>

@@ -85,7 +85,6 @@ function Graph() {
     <div className="container">
       <div className="graph">
         <h3>Daily Atmospheric Carbon Dioxide Concentration</h3>
-            <p>(2013-2023)</p>
         {graph && (
           <Line
             data={graph}
